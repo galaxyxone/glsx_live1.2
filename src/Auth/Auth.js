@@ -42,7 +42,7 @@ export default class Auth {
     localStorage.setItem("id_token", authResult.idToken);
     localStorage.setItem("expires_at", expiresAt);
 
-    this.updateMetaData();
+    
   };
 
   isAuthenticated() {
@@ -57,7 +57,7 @@ export default class Auth {
     this.userProfile = null;
     this.auth0.logout({
       clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
-      returnTo: "https://main.d68xr13qmy8ol.amplifyapp.com",
+      returnTo: "http://localhost:3000",
     });
   };
 
