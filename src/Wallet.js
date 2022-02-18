@@ -64,7 +64,7 @@ class Wallet extends Component {
     if (!DataisLoaded)
       return (
         <div>
-          <h1> Pleses wait some time.... </h1>{" "}
+          <h1> Please wait some time.... </h1>{" "}
         </div>
       );
 
